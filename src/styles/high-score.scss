@@ -1,0 +1,48 @@
+@import "./_globals.scss";
+@import "./game-buttons.scss";
+@import "./_variables.scss";
+
+.container-all-tables {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2em 2em 0 2em;
+}
+
+.table {
+  flex: 0 0 calc(33.33% - 3em);
+}
+
+.high-score-title {
+  text-align: center;
+  font-size: $big-font;
+  color: $secondary-color;
+}
+
+.table-container {
+  background-color: $light-gray;
+  margin: 1em 0;
+}
+
+thead.MuiTableHead-root > tr > th {
+  font-weight: $bold;
+  background: $dark-gray;
+  color: $main-white;
+  font-size: $medium-font;
+}
+
+tbody.MuiTableBody-root >:nth-of-type(2n + 1) { 
+  background-color: $medium-gray;
+}
+
+@media screen and (max-width: 992px) {
+  .table {
+    flex: 0 0 calc(50% - 3em);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .table {
+    flex: 0 0 calc(100% - 3em);
+  }
+}

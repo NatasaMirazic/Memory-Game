@@ -1,0 +1,59 @@
+@import "./Variables.scss";
+
+.section {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.image {
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.closed-image:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.easy {
+  width: 10em;
+  height: 15em;
+  border-radius: $rounded;
+}
+
+.medium {
+  width: 10em;
+  height: 14em;
+  border-radius: $rounded;
+  margin-top: -1em;
+}
+
+.hard {
+  width: 7.5em;
+  height: 11em;
+  border-radius: $rounded;
+}
+
+.display-time {
+  text-align: center;
+  margin-top: 0.5em;
+  color: $secondary-color;
+  font-size: $big-font;
+}
+
+.same-cards {
+  -webkit-box-shadow: 0px 0px 7px 4px #DAA03DFF;
+  -moz-box-shadow: 0px 0px 7px 4px #DAA03DFF;
+  box-shadow: 0px 0px 7px 4px #DAA03DFF;
+}
+
+.opened-image {
+  transition: transform 1s ease;
+}

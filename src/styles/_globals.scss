@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import "./_variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Alfa Slab One', cursive !important;
+}
+
+/**** GROUPED VARIABLES AND VALUES *****/
+%center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%universal-button-style {
+  color: $primary-color !important;
+  background: $secondary-color !important;
+  margin: 1em !important;
+}
+
+%universal-back-button {
+  background: $light-blue !important;
+  width: 6em;
+  color: $primary-color !important;
+  float: $right;
+  margin: 1em !important;
+  font-weight: $bold;
+}

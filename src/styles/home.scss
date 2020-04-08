@@ -1,0 +1,85 @@
+@import "./_globals.scss";
+@import "./game-buttons.scss";
+@import "./_variables.scss";
+
+body {
+  background: $primary-color;
+}
+
+.buttons-container {
+  @extend %center-element;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.main-title {
+  font-size: 9em;
+  margin: 0;
+  color: $secondary-color;
+}
+
+.cards-container {
+  max-width: 90% !important;
+  margin: 0 auto;
+  margin-top: 2em !important;
+}
+
+.card {
+  margin-bottom: 4em;
+}
+
+.first-card-jack {
+  transform: rotate(-30deg) scale(0.7);
+}
+
+.second-card-jack {
+  float: $right;
+  transform: rotate(20deg) scale(0.6);
+}
+
+.first-card-ace {
+  transform: rotate(15deg) scale(0.8);
+  margin-left: 7em;
+}
+
+.second-card-ace {
+  transform: rotate(-20deg) scale(0.7) translate(0, 2em);
+  float: $right;
+  margin-right: 5em;
+}
+
+@media screen and (max-width: 716px) {
+  .second-card-jack {
+    display: none;
+  }
+  .first-card-ace {
+    transform: rotate(-20deg) translate(5em) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .new-game-button,
+  .high-score-button {
+    margin-bottom: 1em !important;
+  }
+  .main-title {
+    font-size: 7em !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .first-card-jack,
+  .second-card-ace {
+    display: none;
+  }
+  .cards-container {
+    max-width: 70% !important;
+  }
+  .second-card-jack {
+    transform: rotate(-20deg) scale(0.7) !important;
+  }
+  .first-card-ace {
+    margin: 0 !important;
+  }
+}

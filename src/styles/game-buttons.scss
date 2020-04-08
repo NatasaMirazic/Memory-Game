@@ -1,0 +1,70 @@
+@import "./_globals.scss";
+@import "./_variables.scss";
+
+.new-game-button-container,
+.high-score-button-container {
+  margin: 2em !important;
+  text-decoration: none;
+}
+
+.new-game-button,
+.high-score-button {
+  font-weight: $bold;
+  font-size: $big-font;
+  background: $secondary-color !important;
+  color: $primary-color !important;
+}
+
+.big-buttons-container {
+  @extend %center-element;
+  flex-direction: column;
+  margin: 2em 0 !important;
+}
+
+.big-new-game-button {
+  @extend %universal-button-style;
+  font-weight: $bold;
+  font-size: $big-font;
+  width: 6em;
+}
+
+.big-back-button {
+  @extend %universal-back-button;
+  font-size: $big-font;
+}
+
+.small-buttons-container {
+  @extend %center-element;
+  flex-direction: row;
+}
+
+.small-new-game-button {
+  @extend %universal-button-style;
+  font-weight: $bold;
+  font-size: $small-font;
+  width: 6em;
+}
+
+.small-back-button {
+  @extend %universal-back-button;
+  font-size: $small-font;
+}
+
+.medium-button {
+  @extend %universal-button-style;
+  font-weight: $bold;
+  font-size: $medium-font;
+  width: 9em;
+  text-align: center;
+}
+
+.back-high-score-button-container {
+  text-decoration: none;
+  float: $right;
+}
+
+.high-score-back-button {
+  @extend %universal-back-button;
+  font-size: $medium-font;
+  margin: 1em 3.5em 1em 1em !important;
+}
