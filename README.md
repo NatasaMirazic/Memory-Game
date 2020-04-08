@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Memory-Game
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+A memory game is created as an internal project for my portfolio. With this game, you can test your memory.
 
-### `npm start`
+This game starts with all the cards facing down. When you click some card, it flipped face up and you should find their pair. Only two cards can be opened at the same time. The goal of this game is to find all pairs in the shortest possible time.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+When you open a game, you can choose which level (difficulty) you want to play. There are three options: easy, medium and hard.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Easy: 6 pairs ie 12 cards
 
-### `npm test`
+Medium: 9 pairs ie 18 cards
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hard: 12 pairs ie 24 cards
 
-### `npm run build`
+While you are playing, the time is running. When you finish a game, if your result (time) is on top 10, you can enter your name and the result is being saved as a high score for that level (difficulty). You can access the high score table for the main menu.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+At the end of the game, you can start a new game, view high scores or go to the main menu.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Good luck!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To run this project on your local machine, execute the following commands:
+```
+git clone URL
+cd Memory-Game
+npm install
+npm start
+```
+## Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ReactJS - a framework which is used in this project (https://reactjs.org/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Material - a library that is used for UI (https://material-ui.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+SASS - used for styling (https://sass-lang.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ReactRouter - used for routing in the application (https://reacttraining.com/react-router/)
 
-## Learn More
+MomentJS - for time management (https://momentjs.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can find working demo here: https://modest-lamarr-a8a057.netlify.com
 
-### Code Splitting
+## Examples
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Here are a few example images of the application.
 
-### Analyzing the Bundle Size
+###### Game on desktop device
+![Memory game](https://github.com/NatasaMirazic/Memory-Game/blob/master/src/images/examples/Memory%20game.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+###### New Game
+![Choose level](https://github.com/NatasaMirazic/Memory-Game/blob/master/src/images/examples/New%20game.png)
 
-### Making a Progressive Web App
+###### Easy Level
+![Easy level](https://github.com/NatasaMirazic/Memory-Game/blob/master/src/images/examples/Easy%20level.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+###### Medium Level
+![Medium level](https://github.com/NatasaMirazic/Memory-Game/blob/master/src/images/examples/Medium%20level.png)
 
-### Advanced Configuration
+###### Hard Level
+![Hard level](https://github.com/NatasaMirazic/Memory-Game/blob/master/src/images/examples/Hard%20level.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+###### High Score Table
+![High Score Table](https://github.com/NatasaMirazic/Memory-Game/blob/master/src/images/examples/High%20Score%20Table.png)
